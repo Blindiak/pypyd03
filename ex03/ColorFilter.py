@@ -28,7 +28,7 @@ class ColorFilter:
 
     @staticmethod
     def celluloid(a, g=5):
-        ls = np.linspace(0, 1, g)
+        ls = np.linspace(0.0, 1.0, g)
         s = a.shape
         for x in range(s[0]):
             for y in range(s[1]):
