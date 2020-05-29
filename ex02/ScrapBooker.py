@@ -8,9 +8,8 @@ class ScrapBooker():
             print("Error bad size")
             raise ValueError("bad size")
         a = arr[position[0]:dimensions[0] + position[0],
-               position[1]:dimensions[1] + position[1]]
+                position[1]:dimensions[1] + position[1]]
         return np.array(a)
-
 
     def thin(self, arr, n, axis):
         s = arr.shape
@@ -45,5 +44,5 @@ if __name__ == "__main__":
     print(a, '\n')
     a = sb.crop(a, (1, 1))
     print(a, '\n')
-    a = sb.mosaic(a, (2,3))
+    a = sb.mosaic(a, (2, 3))
     print(a, '\n')

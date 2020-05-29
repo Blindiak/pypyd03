@@ -5,15 +5,13 @@ import numpy as np
 
 class ImageProcessor():
 
-    @staticmethod
-    def load(path):
+    def load(self, path):
         img = mpimg.imread(path)
-        s = img.shape
-        print("Loading image of dimensions " + str(s(0)) + " x " + str(s(1)))
+        print("Loading image of dimensions " + str(len(img)) + " x "
+              + str(len(img[0])))
         return np.array(img)
 
-    @staticmethod
-    def display(array):
+    def display(self, array):
         plt.imshow(array)
         plt.show()
 
